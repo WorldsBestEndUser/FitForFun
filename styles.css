@@ -257,6 +257,10 @@ td p {
     font-weight: bold;
 }
 
+#contact-info select {
+    cursor: pointer;
+}
+
 #textFirstName, #textLastName, #email {
     width: 60%;
 }
@@ -336,6 +340,7 @@ td p {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
+    cursor: pointer;
 }
 
 
