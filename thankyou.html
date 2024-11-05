@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <!--
+  ====================================
+
+  Assignment: "Fit for Fun"
+  Name: Sarah Pasquale
+      
+  FileName: thankyou.html
+  Last updated: 11/4/2024
+
+  ====================================
+  -->
+
+  <meta charset="utf-8">
+  <script>
+    function printQuery() {
+      var query = window.location.search.substring(1);
+      var vars = query.split("&");
+
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        document.write(pair[0] + ": " + pair[1] + "<br>");
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Request Submitted</title>
+
+</head>
+
+<body>
+
+  <header>
+
+    <img id="logo" src="images/logo.png" alt="logo">
+
+    <div id="nav-main">
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="classes.html">Classes</a></li>
+          <li><a href="info.html">Info</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <div class="container">
+
+    <h3>Thank you for your interest in our fitness classes!</h3>
+
+    <h4>A staff member will contact you within 1-2 business days with the information you have requested.</h4>
+
+    <div id="script-object">
+      <script>
+        printQuery();
+      </script>
+    </div>
+
+  </div>
+
+  <footer>
+    1234 S Main St &nbsp; Springfield, MO &nbsp; 65807 &nbsp;&nbsp;&nbsp; &#8226; &nbsp;&nbsp;&nbsp; (417) 555-5362
+    &nbsp;&nbsp;&nbsp; &#8226; &nbsp;&nbsp;&nbsp; info@fitforfunspd.com
+  </footer>
+
+</body>
+
+</html>

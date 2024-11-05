@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!--
+    ====================================
+
+    Assignment: "Fit for Fun"
+    Name: Sarah Pasquale
+        
+    FileName: info.html
+    Last updated: 11/4/2024
+
+    ====================================
+    -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="styles.css" rel="stylesheet">
+
+    <title>Information</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <img id="logo" src="images/logo.png" alt="logo">
+
+        <div id="nav-main">
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="info.html">Info</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <h2 id="h2-info">Request Information</h2>
+
+    <div id="form-container">
+
+        <form id="form-content" method="get" action="thankyou.html">
+
+            <div id="contact-info">
+
+                <label for="textFirstName">First name:
+                    <input type="text" name="firstName" id="textFirstName" required>
+                </label>
+
+                <label for="textLastName">Last name:
+                    <input type="text" name="lastName" id="textLastName" required>
+                </label>
+
+                <label for="dob">Date of birth:
+                    <input type="date" name="dob" id="dob">
+                </label>
+
+                <label for="email">Email:
+                    <input type="email" name="email" id="email">
+                </label>
+
+                <label for="phone">Phone:
+                    <input type="tel" name="phone" id="phone">
+                </label>
+
+                <label for="selectContact">Contact me by:
+                    <select name="contact" id="selectContact">
+                        <option value="select-email">Email</option>
+                        <option value="select-phone">Phone</option>
+                        <option value="select-text">Text</option>
+                    </select>
+                </label>
+
+            </div>
+
+            <div id="class-list">
+
+                <p id="p_class">I would like more information about:</p>
+
+                <div id="classGrid">
+
+                    <div id="classList1">
+                        <input type="checkbox" name="chCross" class="classes" id="chCross">
+                        <label for="chCross">Cross Training</label>
+                        <input type="checkbox" name="chAdvCross" class="classes" id="chAdvCross">
+                        <label for="chAdvCross">Adv. Cross Training</label>
+                        <input type="checkbox" name="chSpin" class="classes" id="chSpin">
+                        <label for="chSpin">Spin</label>
+                    </div>
+                    <div id="classList2">
+                        <input type="checkbox" name="chSprint" class="classes" id="chSprint">
+                        <label for="chSprint">Sprint</label>
+                        <input type="checkbox" name="chStep" class="classes" id="chStep">
+                        <label for="chStep">Step Interval</label>
+                        <input type="checkbox" name="chCombat" class="classes" id="chCombat">
+                        <label for="chCombat">Body Combat</label>
+                    </div>
+                    <div id="classList3">
+                        <input type="checkbox" name="chPump" class="classes" id="chPump">
+                        <label for="chPump">Body Pump</label>
+                        <input type="checkbox" name="chFIT" class="classes" id="chFIT">
+                        <label for="chFIT">MixxedFIT</label>
+                        <input type="checkbox" name="chZumba" class="classes" id="chZumba">
+                        <label for="chZumba">Zumba</label>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="time-buttons">
+
+                <div id="time-p">
+                    <p>Preferred class time:</p>
+                </div>
+                
+                <div id="time-input-labels">
+                    <input type="radio" name="timeAM" class="timeRadio" id="timeAM">
+                    <label for="timeAM">AM</label>
+                    <input type="radio" name="timePM" class="timeRadio" id="timePM">
+                    <label for="timePM">PM</label>
+                </div>
+                
+
+            </div>
+
+            <div id="free-text">
+
+                <label for="textArea">Questions or comments:</label>
+                <textarea name="textArea" id="textArea"></textarea>
+
+            </div>
+
+            <div id="submit">
+                <input id="submitButton" type="submit" value="Submit">
+            </div>
+
+        </form>
+
+    </div>
+
+    <footer>
+        1234 S Main St &nbsp; Springfield, MO &nbsp; 65807 &nbsp;&nbsp;&nbsp; &#8226; &nbsp;&nbsp;&nbsp; (417) 555-5362
+        &nbsp;&nbsp;&nbsp; &#8226; &nbsp;&nbsp;&nbsp; info@fitforfunspd.com
+    </footer>
+
+</body>
+
+</html>

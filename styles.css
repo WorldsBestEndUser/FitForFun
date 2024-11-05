@@ -1,0 +1,408 @@
+/*
+    ====================================
+
+    Assignment: "Fit for Fun"
+    Name: Sarah Pasquale
+        
+    FileName: styles.css
+    Last updated: 11/4/2024
+
+    ====================================
+*/
+
+
+/*General page styles*/
+
+body {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    min-height: 100vh;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #D6D6D6;
+    width: 100%;
+    height: 18%;
+}
+
+#logo {
+    width: 225px;
+    margin-left: 10px;
+}
+
+h1, h2, h3, h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+h1 {
+    padding: 35px 0;
+}
+
+h2, h3 {
+    padding: 20px 0;
+}
+
+#footer-div {
+    text-align: center;
+}
+
+footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+    border-top: solid 2px white;
+}
+
+
+/*Navigation*/
+
+#nav-main {
+    float: right;
+    margin-top: 60px;
+}
+
+#nav-menu {
+    width: 100%;
+}
+
+#nav-menu ul{
+    list-style-type: none;
+    padding-inline-start: 0px;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+#nav-menu a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 16pt;
+    color: #03466E;
+    -webkit-flex: 3 1 200px;
+    flex: 3 1 200px;
+    margin-left: 75px;
+}
+
+
+/*Index*/
+
+#flex-imgs {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    top: 50%;
+    bottom: 50%;
+    box-shadow: 0 0 2px 2px #C9C9C9;
+    margin-bottom: 50px;
+}
+
+.img-index {
+    -webkit-flex: 2 1;
+    flex: 2 1;
+    width: 33%;
+}
+
+
+/*Classes*/
+
+table {
+    background-color: #D6D6D6;
+    border: solid 1px white;
+    box-shadow: 0 0 1px 1px white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11pt;
+    width: 85%;
+    margin: auto;
+}
+
+th, td {
+    background-color: #E8E8E8;
+    color: #2B2B2B;
+    border: outset 1px #757575;
+}
+
+th {
+    background-color: #D6D6D6;
+    color: #2B2B2B;
+    font-size: 13pt;
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+td p {
+    margin-left: 5px;
+    line-height: 5px;
+    font-size: 10pt;
+}
+
+.col1 {
+    background-color: #D6D6D6;
+    color: #2B2B2B;
+    font-size: 13pt;
+    font-weight: bold;
+    width: 7%;
+    text-align: center;
+}
+
+.col2-8 {
+    width: 13.2%;
+}
+
+.class-name {
+    font-weight: bold;
+}
+
+.class-teacher {
+    font-style: italic;
+}
+
+.blank {
+    background-color: #A3A3A3;
+}
+
+.ct {
+    border-left: solid 10px #BE1C2D;
+}
+
+.at {
+    border-left: solid 10px #FF6C00
+}
+
+.sp {
+    border-left: solid 10px #9A00DE
+}
+
+.st {
+    border-left: solid 10px #0BCEDE
+}
+
+.si {
+    border-left: solid 10px #027D0B
+}
+
+.bc {
+    border-left: solid 10px #FFD700 
+}
+
+.bp {
+    border-left: solid 10px #57007D
+}
+
+.mf {
+    border-left: solid 10px #04C911
+}
+
+.zm {
+    border-left: solid 10px #FFB5FF
+}
+
+
+/*Info*/
+
+#form-container {
+    width: 38%;
+    background-color: #D8E9F5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 22px;
+    margin: auto auto 50px auto;
+    box-shadow: 0 0 2px 2px white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#form-container label, #p_class {
+    font-weight: bold;
+}
+
+#contact-info, #class-list, #time-buttons, #free-text {
+    margin-top: 20px;
+    padding-top: 8px;
+    margin-left: 5%;
+}
+
+#class-list, #time-buttons, #free-text {
+    padding-bottom: 10px;
+}
+
+#contact-info input, select {
+    position: absolute;
+    left: 33%;
+    border-radius: 5px;
+    border-style: inset;
+    border-width: 1px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10pt;
+    height: 22px;
+    margin-top: -4px;
+}
+
+#contact-info label {
+    position: relative;
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: bold;
+}
+
+#textFirstName, #textLastName, #email {
+    width: 60%;
+}
+
+#p_class {
+    padding-bottom: 5px;
+}
+
+#classGrid {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#class-list label {
+    display: block;
+    position: relative;
+    left: 14%;
+    padding-bottom: 10px;
+    font-size: 11pt;
+}
+
+#class-list input {
+    position: absolute;
+    padding-bottom: 5px;
+    margin: 4px 3px 3px 4px;
+}
+
+#time-buttons {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 60%;
+}
+
+#time-buttons p{
+    font-weight: bold;
+}
+
+#time-buttons>label>label {
+    font-size: 11pt;
+}
+
+#time-input-labels {
+    padding-top: 15px;
+}
+
+#timeAM, #timePM {
+   margin-left: 15px;
+}
+
+#free-text label {
+    padding-bottom: 15px;
+}
+#textArea {
+    margin-top: 12px;
+    height: 80px;
+    width: 90%;
+    border-radius: 8px;
+    border-style: inset;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#submit {
+    text-align: center;
+}
+
+#submitButton {
+    padding: 5px;
+    width: 30%;
+    margin: 30px 0 20px 0;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #144594;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+
+/*Thank you*/
+
+.container {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.container h2, h4 {
+    text-align: center;
+}
+
+.container h2 {
+    padding: 35px 0;
+}
+
+#script-object {
+    position: relative;
+    left: 45%;
+    margin-top: 3%;
+}
+
+script {
+    position: absolute;
+}
+
+
+/*Responsive styling*/
+
+@media screen and (max-width: 775px) {
+    
+   header {
+        text-align: center;
+    }
+
+    #logo {
+        margin-top: 50px;
+    }
+
+    #nav-main {
+        float: none;
+        margin-top: 0;
+    }
+
+    #nav-main ul{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        margin-right: 0;
+    }
+
+    #nav-main li{
+        line-height: 50px;
+    }
+
+    #nav-main a {
+        margin-left: 0;
+    }
+
+    #nav-main::after {
+        margin-bottom: 50px;
+    }
+
+    h1 {
+        padding-top: 0;
+    }
+
+}
